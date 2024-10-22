@@ -23,7 +23,7 @@ function App() {
       <main>
         {/* <Header /> */}
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="user/:id" element={<Home setInfosUser={setInfosUser} infosUser={infosUser} />}>
             <Route path="dashboard" element={<Dashboard />} />

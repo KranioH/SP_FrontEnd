@@ -1,22 +1,18 @@
 import React from "react";
 import { FaUpload } from "react-icons/fa";
-import '../css/Dashboard.css'
+import "../css/Dashboard.css";
 
 const Dashboard = () => {
   return (
     <div>
       <div className="dashboard">
-        <div className="main"></div>
-        <form className="area-input">
-          <label id="upload1" htmlFor="input-upload">
-            Enviar arquivo
-          </label>
-          <input type="file" id="input-upload" style={{ display: "none" }} />
-          <label id="upload2" htmlFor="input-upload">
-            <FaUpload />
-          </label>
-          {/* <button id="upload"></button> */}
-        </form>
+        <iframe
+          src="https://app.powerbi.com/view?r=eyJrIjoiYjBkMzk4OTUtMjUxNi00NzlmLWE5ZjctZDc2OTg5NmM0ZTY5IiwidCI6ImFmMTNjMjI1LTBmMDctNGM1Yi04YTRiLTFhYjJjYjliMzUzYyJ9"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );

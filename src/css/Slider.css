@@ -1,0 +1,14 @@
+.swiper {
+    width: 50%;
+    background-color: red;
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    object-fit: cover;
+    background-size: cover;
+}
+
+img {
+    object-fit: cover;
+}
