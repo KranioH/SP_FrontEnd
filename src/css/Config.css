@@ -1,0 +1,89 @@
+.config {
+    width: 100%;
+    height: 91vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        height: 350px;
+        padding: 0 20px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        border-radius: 10px;
+
+        .area-infos{
+
+            .userInfo {
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                width: 80%;
+                height: 50px;
+                border: 1px solid #000;
+                font-size: 15px;
+            }
+
+            input {
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                width: 80%;
+                height: 50px;
+                border: 1px solid #000;
+                font-size: 15px;
+            }
+        }
+
+        .bnt-infos {
+
+            #updateInfo{
+                width: 250px;
+                height: 50px;
+                color: #fff;
+                background-color: green;
+                border: 1px solid transparent;
+                cursor: pointer;
+                transition: .2s;
+                border-radius: 5px;
+            }
+        
+            #updateInfo:hover{
+                color: #000;
+                background-color: #fff;
+                border-color: #000;
+            }
+
+            #Salvar {
+
+            }
+
+            #Salvar:hover
+        }
+    
+        
+    }
+
+    #delete-user {
+        width: 250px;
+        height: 50px;
+        background-color: red;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    #delete-user:hover{
+        border-color: #000;
+        background-color: #fff;
+        color: #000;
+    }
+}

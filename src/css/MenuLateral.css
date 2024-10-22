@@ -1,0 +1,122 @@
+.menu-lateral {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5eb384;
+  padding: 40px 0;
+  border-radius: 0 40px 40px 0;
+  background: linear-gradient(to top, #008000, #008000b5, #008000),
+    url("/src/assets/image/wallpaper.jpg");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  transition: all 0.2s;
+
+  #menuBurger {
+    width: 30px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .logo {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .navegation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    list-style: none;
+
+    .nave-link {
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+      height: 40px;
+      position: relative;
+      z-index: 1;
+      transition: all 0.2s;
+      color: #fff;
+    }
+
+    .nave-link:hover {
+      color: #c5e0c5b5;
+    }
+
+    .nave-link.atual {
+      color: #000;
+    }
+    
+    .nave-link.atual:hover {
+      color: #008000;
+    }
+
+    .atual::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      width: 85%;
+      height: 40px;
+      background-color: #ffffff;
+      border-radius: 50px 0 0 50px;
+    }
+
+    #config {
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+  /* 
+  p {
+    color: #ffffff;
+  } */
+}
+
+.hidden {
+  width: 100px;
+  transition: all 0.2s;
+}
+
+.responsive {
+  position: fixed;
+  left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    img {
+      width: 20px;
+    }
+  }
+
+  .navegation {
+    .nave-link {
+      text-align: center;
+    }
+
+    .atual::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      width: 95%;
+      height: 40px;
+      background-color: #ffffff;
+      border-radius: 20px 0 0 20px;
+    }
+  }
+}

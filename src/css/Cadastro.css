@@ -1,0 +1,138 @@
+.cadastro {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+
+    .sign-up {
+        background-color: #fff;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        /* gap: 10px; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+        padding: 50px;
+        box-shadow: 5px 0 10px 0 #00000056;
+
+        .message {
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+            color: red;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .logo {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #logo-icon {
+                width: 240px;
+                height: 100px;    
+            }
+
+            #logo-nome {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .area-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+
+            input {
+                width: 100%;
+                height: 50px;
+                border: 2px solid #206d20;
+                outline: none;
+                padding-left: 20px;
+                border-radius: 5px;
+            }
+
+            input::placeholder{
+                color: #00000057;
+                font-weight: bold;
+            }
+        }
+
+        /* .loading {
+            color: red;
+            animation: loading 1s linear infinite;
+        } */
+
+        #bnt-submit {
+            width: 100%;
+            height: 50px;
+            background-color: #206d20;
+            border: 1px solid transparent;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+            transition: .2s;
+
+            .loading {
+                color: #fff;
+                font-size: 20px;
+                animation: loading 1s linear infinite;
+            }
+        }
+
+        #bnt-submit:hover {
+            background-color: #fff;
+            border-color: #206d20;
+            color: #000;
+
+            .loading {
+                color: #000;
+            }
+        }
+    }
+
+    .sign-in-photo {
+        width: 70%;
+        height: 100%;
+        overflow: hidden;
+        background-color: pink;
+        position: relative;
+
+        #mini-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border-radius: 5px;
+        }
+        
+        #wallpaper-suape {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes loading {
+    to {
+        rotate: 360deg;
+    }
+}
